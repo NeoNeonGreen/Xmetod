@@ -134,6 +134,115 @@ h1::first-letter {
     position: absolute;
 }
 
+/* MODAL */
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Hide menu */
+    z-index: -1;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal.show{
+    visibility: visible;
+    z-index: 999;
+    opacity: 1;
+}
+/* 
+.modal--active{
+    z-index: 9;
+    visibility: visible;
+    opacity: 1;
+} */
+
+.modal-window{
+    position: relative;
+    z-index: 10;
+    padding: 40px 15px;
+    background-color: #fff;
+    border-radius: 32px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+}
+
+.modal__title{
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.modal-form{
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.modal-input{
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    border: none;
+    max-width: 324px;
+}
+
+.modal-input:focus{
+    outline: none;
+}
+
+.modal__agree{
+    max-width: 324px;
+}
+
+.modal-checkbox{
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+}
+
+.modal__submit{
+    display: block;
+    margin: 0 auto;
+}
+
+.close{
+    padding: 0;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    width: 24px !important;
+    height: 24px !important;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.close:hover{
+    opacity: 1;
+    background-color: transparent;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.7;
+    z-index: 9;
+}
+
 /* adv */
 
 .title-block {
@@ -667,6 +776,7 @@ textarea {
     border: none;
     cursor: pointer;
     padding: 10px 25px;
+    width: 148px !important;
 }
 
 .trust__btn:focus{
