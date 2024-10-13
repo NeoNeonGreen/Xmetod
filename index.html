@@ -14,19 +14,27 @@
 <body>
     <div id="modalWin" class="modal">
         <div class="modal-window">
-            <h2 class="section-title modal__title">Заявка</h2>
+            <h2 class="section-title modal__title">Оставьте заявку</h2>
+            <div class="modal__span">И мы свяжемся с вами в ближайшее время</div>
             <form class="form-wrapper" action="">
                 <div class="modal-form flex">
-                    <input class="modal-input" type="text" name="firstname" placeholder="Ваше имя *" required>
-                    <input class="modal-input" type="text" name="email" placeholder="E-mail *" required>
-                    <input class="modal-input" type="text" name="phone-number" placeholder="Номер телефона *" required>
-                    <input class="modal-input" type="text" name="qustion" placeholder="Ваш вопрос *" required>
+                    <input class="modal-input" type="text" name="firstname" placeholder="ФИО" required>
+                    <input class="modal-input" type="text" name="firm" placeholder="Наименование фирмы" required>
+                    <input class="modal-input" type="text" name="phone-number" placeholder="Номер телефона" required>
+                    <input class="modal-input" type="text" name="email" placeholder="E-mail" required>
+                    <input class="modal-input" type="text" name="qustion" placeholder="Ваш вопрос" required>
+                    <select name="select">
+                        <option value="value1" selected>Коммерческий отдел под ключ</option>
+                        <option value="value2">Аудит Отдела продаж</option>
+                        <option value="value3">Привлечение новых клиентов</option>
+                        <option value="value4">Найм сотрудников</option>
+                      </select>
                 </div>
                 <div class="modal__agree flex">
                     <div class="feedback-form">
                         <input class="modal-checkbox" type="checkbox" required>
                     </div>
-                    <span class="feedback-span">Я даю согласие на обработку моих персональных данных</span>
+                    <span class="feedback-span">Я даю своё согласие на обработку моих персональных данных в соответствии с политикой конфиденциальности</span>
                 </div>
                 <input type="submit" class="btn-reset btn modal__submit" value="Отправить" easy-toggle="#modalWin"
                     easy-class="open">
@@ -124,7 +132,7 @@
             <h1 class="hero__title">XMetod — новый уровень</h1>
             <span class="hero__descr">
                 Построим управляемый коммерческий отдел,
-                который будет приводить клиентов и продаватььь
+                который будет приводить клиентов и продавать
             </span>
 
             <div class="hero__list flex">

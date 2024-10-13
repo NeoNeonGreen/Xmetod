@@ -168,7 +168,7 @@ h1::first-letter {
 .modal-window{
     position: relative;
     z-index: 10;
-    padding: 40px 15px;
+    padding: 50px 25px;
     background-color: #fff;
     border-radius: 32px;
     box-shadow: var(--shadow);
@@ -181,18 +181,27 @@ h1::first-letter {
     margin-bottom: 15px;
 }
 
+.modal__span{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 22px;
+    text-align: center;
+}
+
 .modal-form{
     flex-direction: column;
     gap: 12px;
     margin-bottom: 15px;
 }
 
-.modal-input{
+.modal-input, select, option{
     padding: 15px 20px;
     border-radius: 10px;
     box-shadow: var(--shadow);
     border: none;
     max-width: 324px;
+    background-color: #ECECEC;
 }
 
 .modal-input:focus{
@@ -201,6 +210,7 @@ h1::first-letter {
 
 .modal__agree{
     max-width: 324px;
+    margin-bottom: 15px;
 }
 
 .modal-checkbox{
@@ -212,6 +222,11 @@ h1::first-letter {
 .modal__submit{
     display: block;
     margin: 0 auto;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    background-color: #FF5300;
+    border-radius: 20px;
 }
 
 .close{
